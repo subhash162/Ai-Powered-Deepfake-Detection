@@ -20,6 +20,8 @@ uploads/
 *.db
 *.sqlite3
 alembic/versions/*.pyc
+alembic
+alembic.ini
 
 # IDE
 .vscode/
