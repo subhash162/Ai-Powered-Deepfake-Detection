@@ -13,12 +13,12 @@ class Detection(Base):
     image_size = Column(Integer, nullable=False)  # in bytes
     
     # Detection results
-    is_ai_generated = Column(Boolean, nullable=True)  
+    is_ai_generated = Column(Boolean, nullable=True)  # True = AI, False = Real
     confidence_score = Column(Float, nullable=True)  # 0-1
     model_used = Column(String, nullable=True)
     detection_details = Column(Text, nullable=True)  # JSON string for additional details
     
-    
+    # Metadata
     created_at = Column(DateTime, default=datetime.utcnow)
     processed_at = Column(DateTime, nullable=True)
     
